@@ -1,0 +1,114 @@
+.list-ul {
+	overflow: hidden;
+	padding: 5px;
+	background-color: #eee;
+}
+.list-ul li {
+	float: left;
+	padding: 5px;
+	width: 50%;
+	-webkit-box-sizing: border-box;
+}
+.list-ul li a {
+	padding: 10px;
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.list-ul li a.icon-bg-green {
+	background: #009a61
+}
+.list-ul li a.icon-bg-blue {
+	background: #00b5eb
+}
+.list-ul li a.icon-bg-yellow {
+	background: #ffae3a
+}
+.list-ul li a.icon-bg-red {
+	background: #ef5443
+}
+.list-ul li a.icon-bg-pink {
+	background: #fe949e
+}
+.list-ul li a.icon-bg-dark {
+	background: #888
+}
+
+.list-ul li i[class*="icon-"] {
+	display: inline-block;
+	float: left;
+	margin: 0 10px 0 0;
+	width: 24px;
+	height: 24px;
+	background-image: url(../img/icon.png);
+	background-size: 144px 96px;
+}
+
+.list-ul .icon-website {
+	background-position: 0 0;
+}
+.list-ul .icon-member {
+	background-position: -24px 0;
+}
+.list-ul .icon-shop {
+	background-position: -48px 0;
+}
+.list-ul .icon-house {
+	background-position: -72px 0;
+}
+.list-ul .icon-auto {
+	background-position: -96px 0;
+}
+.list-ul .icon-hospital {
+	background-position: -120px 0;
+}
+.list-ul .icon-marry {
+	background-position: 0 -24px;
+}
+.list-ul .icon-hotel {
+	background-position: -24px -24px;
+}
+.list-ul .icon-order {
+	background-position: -48px -24px;
+}
+.list-ul .icon-meal {
+	background-position: -144px -24px;
+}
+.list-ul .icon-group {
+	background-position: -192px -24px;
+}
+.list-ul .icon-survey {
+	background-position: -240px -24px;
+}
+
+.list-ul .icon-words {
+	background-position: 0 -96px;
+}
+.list-ul .icon-topic {
+	background-position: -48px -96px;
+}
+.list-ul .icon-service {
+	background-position: -96px -96px;
+}
+.list-ul .icon-vote {
+	background-position: -144px -96px;
+}
+.list-ul .icon-spin {
+	background-position: -192px -96px;
+}
+.list-ul .icon-menu {
+	background-position: -240px -96px;
+}
+
+
+
+
+
+
+
+
