@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+	<title>普通的图片轮播</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./dist/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="./dist/css/gmu.css" />
+
+	<script type="text/javascript" src="./dist/js/zepto.js"></script>
+	<script type="text/javascript" src="./dist/js/gmu.js"></script>
+	<script type="text/javascript" src="./dist/js/widget/slider/$touch.js"></script>
+	<script type="text/javascript" src="./dist/js/widget/slider/$autoplay.js"></script>
+	<script type="text/javascript" src="./dist/js/widget/slider/$lazyloadimg.js"></script>
+</head>
+<body>
+
+<div id="slider">
+	<div>
+		<a href="http://www.baidu.com/"><img lazyload="./examples/assets/slider/image1.png"></a>
+		<p>1,让Coron的太阳把自己晒黑—小天</p>
+	</div>
+	<div>
+		<a href="http://www.baidu.com/"><img lazyload="./examples/assets/slider/image2.png"></a>
+		<p>2,让Coron的太阳把自己晒黑—小天</p>
+	</div>
+	<div>
+		<a href="http://www.baidu.com/"><img lazyload="./examples/assets/slider/image3.png"></a>
+		<p>3,让Coron的太阳把自己晒黑—小天</p>
+	</div>
+	<div>
+		<a href="http://www.baidu.com/"><img lazyload="./examples/assets/slider/image4.png"></a>
+		<p>4,让Coron的太阳把自己晒黑—小天</p>
+	</div>
+</div>
+<script>
+	//创建slider组件
+	$('#slider').slider( { imgZoom: true });
+</script>
+
+<h2>Buttons</h2>
+<div id="btn">
+	<a href="#" class="ui-btn ui-btn-primary">提交</a>
+	<a href="#" class="ui-btn ui-btn-danger">删除</a>
+	<a href="#" class="ui-btn ui-btn-inline ui-btn-primary">提交</a>
+	<a href="#" class="ui-btn ui-btn-inline ui-btn-danger">删除</a>
+	<a href="#" class="ui-btn ui-mini ui-btn-primary">提交</a>
+	<a href="#" class="ui-btn ui-mini ui-btn-danger">删除</a>
+
+	<a href="#" class="ui-btn ui-btn-inline ui-btn-primary ui-icon-plus">提交</a>
+	<a href="#" class="ui-btn ui-btn-inline ui-btn-danger">删除</a>
+
+</div>
+
+
+<div id="toolbar1">
+	<div class="ui-toolbar-left">
+		<a href="../../#toolbar" class="ui-btn ui-toolbar-button"><i class="ui-icon ui-icon-plus white"></i></a>
+	</div>
+	<h3>最新话题</h3>
+	<div class="ui-toolbar-right">
+		<span class="btn_1 ui-toolbar-button">百科</span>
+	</div>
+</div>
+<script>
+	// 半setup方式调用
+	$('#toolbar1').toolbar({
+	});
+</script>
+
+<br>
+<div id="toolbar2">
+	<div class="ui-toolbar-left">
+	</div>
+	<h3>工具栏</h3>
+	<div class="ui-toolbar-right">
+		<span class="btn_1 ui-toolbar-button">百科</span>
+	</div>
+</div>
+<script>
+	// 半setup方式调用
+	$('#toolbar2').toolbar({
+		leftBtns: ['<span class="ui-btn">返回</span>'],
+		rightBtns: ['<span class="btn_1">文库</span>']
+	});
+</script>
+
+
+
+
+<br>
+<div id="toolbar3">
+	<div class="ui-toolbar-left">
+		<a href="../../#toolbar" class="ui-toolbar-backbtn">返回</a>
+	</div>
+	<h3>工具栏</h3>
+	<div class="ui-toolbar-right">
+		<span class="btn_1 ui-toolbar-button">百科</span>
+	</div>
+</div>
+<script>
+	// 半setup方式调用
+	$('#toolbar3').toolbar({
+		leftBtns: ['<span class="btn_1">返回</span>'],
+		rightBtns: ['<span class="btn_1">文库</span>']
+	});
+</script>
+
+
+
+
+
+
+</body>
+</html>
