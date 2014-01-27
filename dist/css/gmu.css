@@ -1827,9 +1827,11 @@
 	top: 0;
 	height: 100%;
 }
-
-.ui-toolbar-left {
-	left: 0;
+.ui-toolbar-left .ui-btn-icon-left {
+	padding-left: 30px;
+}
+.ui-toolbar-right .ui-btn-icon-right {
+	padding-right: 30px;
 }
 .ui-toolbar-right {
 	top: 0;
@@ -1850,10 +1852,10 @@
 
 
 .ui-toolbar-wrap {
-	height: 40px;
+	height: 39px;
 	border: #d2d2d2 solid 1px;
 	border-width: 1px 0;
-	background: #f4f4f4;
+	background: #f2f2f2;
 }
 
 .ui-toolbar-wrap a {
@@ -1866,7 +1868,7 @@
 }
 .ui-toolbar-button {
 	display: inline-block;
-	padding: 0.5em 0.6em;
+	padding: 0.6em;
 	margin: 2px;
 	border: 1px solid #D2D2D2;
 	-webkit-border-radius: 2px;

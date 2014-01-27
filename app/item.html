@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+	<title>winhu</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../dist/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../dist/css/gmu.css" />
+	<link rel="stylesheet" type="text/css" href="../dist/css/winhu.css" />
+
+	<script type="text/javascript" src="../dist/js/zepto.js"></script>
+	<script type="text/javascript" src="../dist/js/gmu.js"></script>
+</head>
+<body>
+
+
+	<div class="main" id="page">
+		<div id="toolbar1">
+			<a href="javascript:;" id="product" class="button ui-btn ui-btn-icon-left" data-icon="grid"><span class="ui-btn-text">所有产品</span><span class="ui-icon ui-icon-grid"></span></a>
+			<h2>微官网</h2>
+			<a class="button ui-btn ui-btn-icon-right" data-icon="arrow-r"><span class="ui-btn-text">购买</span><span class="ui-icon ui-icon-arrow-r"></span></a>
+		</div>
+		<div class="">
+			<section id="cont-panel" class="option">
+            <h2>panel组件</h2>
+            <p class="panel-des">panel是GMU_2.0.5推出的新组件，可以从左边或右边呼出新内容，是一款适合于移动端交互的组件，它具有以下参数：</p>
+            <ul class="panel-opt">
+                <li>
+                    <span class="opt-name">contentWrap:</span> {Dom/Zepto/selector} 主体内容dom选择器或dom元素
+                </li>
+                <li>
+                    <span class="opt-name">scrollMode:</span> {String} 'follow |'disappear' | 'fixed'   Panel滑动方式，follow表示跟随页面滑动，disappear表示页面滑动时panel消失
+                </li>
+                <li>
+                    <span class="opt-name">animate:</span> {Boolean} True | false	Panel出现时是否有动画
+                </li>
+                <li>
+                    <span class="opt-name">display:</span> {String} overlay' | 'reveal' | 'push' Panel出现模式，overlay表示浮层reveal表示在content下边展示，push表示panel将content推出
+                </li>
+                <li>
+                    <span class="opt-name">position:</span> {String} 'left' | 'right' 在右边或左边
+                </li>
+                <li>
+                    <span class="opt-name">dismissible:</span> {Boolean}  True | false	是否在内容区域点击后，panel消失
+                </li>
+                <li>
+                    <span class="opt-name">swipeClose:</span> {Boolean}   True | false	在panel上滑动，panel是否关闭
+                </li>
+                <li>
+                    <span class="opt-name">offset:</span> {Object}  相对于contentWrap的offset
+                </li>
+            </ul>
+      </section>
+		</div>
+	</div>
+
+
+	<div class="panel">
+		<h2>panel组件</h2>
+		<ul>
+			<li><a href="">微网站</a></li>
+			<li><a href="">微网站</a></li>
+			<li><a href="">微网站</a></li>
+			<li><a href="">微网站</a></li>
+			<li><a href="">微网站</a></li>
+		</ul>
+	</div>
+	<script>
+		// 全setup方式调用
+		$('#toolbar1').toolbar({
+			fixed: true
+		});
+
+		$(function ($) {
+      $('.panel').panel({
+        contentWrap: $('.main')
+      });
+      $('#product').on('click', function (e) {
+        $('.panel').panel('toggle', 'push', 'left', 'reveal', 'animate');
+      });
+      $('.panel-close').on('click', function () {
+        $('.panel').panel('close');
+      });
+
+    }(Zepto));
+	</script>
+</body>
+</html>
