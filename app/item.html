@@ -22,35 +22,35 @@
 		</div>
 		<div class="">
 			<section id="cont-panel" class="option">
-            <h2>panel组件</h2>
-            <p class="panel-des">panel是GMU_2.0.5推出的新组件，可以从左边或右边呼出新内容，是一款适合于移动端交互的组件，它具有以下参数：</p>
-            <ul class="panel-opt">
-                <li>
-                    <span class="opt-name">contentWrap:</span> {Dom/Zepto/selector} 主体内容dom选择器或dom元素
-                </li>
-                <li>
-                    <span class="opt-name">scrollMode:</span> {String} 'follow |'disappear' | 'fixed'   Panel滑动方式，follow表示跟随页面滑动，disappear表示页面滑动时panel消失
-                </li>
-                <li>
-                    <span class="opt-name">animate:</span> {Boolean} True | false	Panel出现时是否有动画
-                </li>
-                <li>
-                    <span class="opt-name">display:</span> {String} overlay' | 'reveal' | 'push' Panel出现模式，overlay表示浮层reveal表示在content下边展示，push表示panel将content推出
-                </li>
-                <li>
-                    <span class="opt-name">position:</span> {String} 'left' | 'right' 在右边或左边
-                </li>
-                <li>
-                    <span class="opt-name">dismissible:</span> {Boolean}  True | false	是否在内容区域点击后，panel消失
-                </li>
-                <li>
-                    <span class="opt-name">swipeClose:</span> {Boolean}   True | false	在panel上滑动，panel是否关闭
-                </li>
-                <li>
-                    <span class="opt-name">offset:</span> {Object}  相对于contentWrap的offset
-                </li>
-            </ul>
-      </section>
+						<h2>panel组件</h2>
+						<p class="panel-des">panel是GMU_2.0.5推出的新组件，可以从左边或右边呼出新内容，是一款适合于移动端交互的组件，它具有以下参数：</p>
+						<ul class="panel-opt">
+							<li>
+									<span class="opt-name">contentWrap:</span> {Dom/Zepto/selector} 主体内容dom选择器或dom元素
+							</li>
+							<li>
+									<span class="opt-name">scrollMode:</span> {String} 'follow |'disappear' | 'fixed'   Panel滑动方式，follow表示跟随页面滑动，disappear表示页面滑动时panel消失
+							</li>
+							<li>
+									<span class="opt-name">animate:</span> {Boolean} True | false	Panel出现时是否有动画
+							</li>
+							<li>
+									<span class="opt-name">display:</span> {String} overlay' | 'reveal' | 'push' Panel出现模式，overlay表示浮层reveal表示在content下边展示，push表示panel将content推出
+							</li>
+							<li>
+									<span class="opt-name">position:</span> {String} 'left' | 'right' 在右边或左边
+							</li>
+							<li>
+									<span class="opt-name">dismissible:</span> {Boolean}  True | false	是否在内容区域点击后，panel消失
+							</li>
+							<li>
+									<span class="opt-name">swipeClose:</span> {Boolean}   True | false	在panel上滑动，panel是否关闭
+							</li>
+							<li>
+									<span class="opt-name">offset:</span> {Object}  相对于contentWrap的offset
+							</li>
+						</ul>
+			</section>
 		</div>
 	</div>
 
@@ -72,17 +72,17 @@
 		});
 
 		$(function ($) {
-      $('.panel').panel({
-        contentWrap: $('.main')
-      });
-      $('#product').on('click', function (e) {
-        $('.panel').panel('toggle', 'push', 'left', 'reveal', 'animate');
-      });
-      $('.panel-close').on('click', function () {
-        $('.panel').panel('close');
-      });
+			$('.panel').panel({
+				contentWrap: $('.main')
+			});
+			$('#product').on('click', function (e) {
+				$('.panel').panel('toggle', 'push', 'left', 'reveal', 'animate');
+			});
+			$('.panel-close').on('click', function () {
+				$('.panel').panel('close');
+			});
 
-    }(Zepto));
+		}(Zepto));
 	</script>
 </body>
 </html>
